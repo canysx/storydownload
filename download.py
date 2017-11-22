@@ -70,5 +70,7 @@ def textInfo(i,itemUrl,textName):
             with open(fileName,"a",encoding='utf-8') as f:
                 f.write(i)
     #print(infoNum)
+    with open(fileName,"a",encoding='utf-8') as f:
+        f.write("\n")
 if __name__ == "__main__":
     fenleiUrl()
