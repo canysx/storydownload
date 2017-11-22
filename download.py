@@ -14,6 +14,7 @@ def fenleiUrl():
             data.encoding = 'gbk'
             #print(data.text)
             page_last = etree.HTML(data.text)
+            #获取小说最后一页
             page_last = page_last.xpath('//div/a[@class="last"]/text()')
             #print(page_last)
             textUrl(data)
